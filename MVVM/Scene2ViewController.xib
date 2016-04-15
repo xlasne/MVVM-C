@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10116"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="Scene2ViewController" customModule="MVVM" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="oi4-F1-HQX" id="qaN-Sl-mUT"/>
+                <outlet property="textField" destination="bs7-Db-nd5" id="gUB-Vw-5Y4"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box title="Scene 2 or 3" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="qyc-gX-Qnc">
+                    <rect key="frame" x="0.0" y="-1" width="480" height="270"/>
+                    <view key="contentView" id="UhC-Jt-lYk">
+                        <rect key="frame" x="1" y="1" width="478" height="254"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </box>
+                <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bs7-Db-nd5">
+                    <rect key="frame" x="100" y="220" width="360" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="hKl-6c-ocx"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" placeholderString="View 2" drawsBackground="YES" id="Jo9-e9-uBL">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oi4-F1-HQX">
+                    <rect key="frame" x="18" y="183" width="444" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Delta:" id="bti-u8-exJ">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ruy-Wm-zGU">
+                    <rect key="frame" x="18" y="223" width="74" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Value 2:" id="kej-h3-BSf">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="qyc-gX-Qnc" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="3" id="2Ic-bs-aao"/>
+                <constraint firstItem="oi4-F1-HQX" firstAttribute="top" secondItem="bs7-Db-nd5" secondAttribute="bottom" constant="20" id="5rg-cZ-0XY"/>
+                <constraint firstAttribute="trailing" secondItem="bs7-Db-nd5" secondAttribute="trailing" constant="20" id="CYt-so-uR0"/>
+                <constraint firstItem="bs7-Db-nd5" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="30" id="JmC-Tf-nIW"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="oi4-F1-HQX" secondAttribute="bottom" constant="50" id="KZu-hd-7WS"/>
+                <constraint firstAttribute="trailing" secondItem="oi4-F1-HQX" secondAttribute="trailing" constant="20" id="NF7-NL-QF4"/>
+                <constraint firstItem="bs7-Db-nd5" firstAttribute="baseline" secondItem="ruy-Wm-zGU" secondAttribute="baseline" id="TU6-3t-6Pj"/>
+                <constraint firstItem="qyc-gX-Qnc" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="3" id="WTB-3t-0bc"/>
+                <constraint firstItem="bs7-Db-nd5" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="100" id="avz-kl-1VH"/>
+                <constraint firstItem="oi4-F1-HQX" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="eNu-XP-Ff4"/>
+                <constraint firstAttribute="trailing" secondItem="qyc-gX-Qnc" secondAttribute="trailing" constant="3" id="ipY-5s-9qz"/>
+                <constraint firstAttribute="bottom" secondItem="qyc-gX-Qnc" secondAttribute="bottom" constant="3" id="oUi-DA-PXb"/>
+                <constraint firstItem="bs7-Db-nd5" firstAttribute="leading" secondItem="ruy-Wm-zGU" secondAttribute="trailing" constant="10" id="qzB-uI-hoc"/>
+                <constraint firstItem="ruy-Wm-zGU" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="s5i-ei-8Gi"/>
+            </constraints>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="KTM-7U-Mra"/>
+    </objects>
+</document>
